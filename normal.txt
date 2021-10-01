@@ -1,0 +1,11 @@
+create git repositary in github
+
+git init
+
+git add .
+
+git commit -m "Initial commit"
+
+git remote add origin [quick setup link]
+
+git push -u origin master

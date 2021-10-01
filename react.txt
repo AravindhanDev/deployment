@@ -1,0 +1,24 @@
+npm i gh-pages --save-dev  // save it in dev dependency
+
+add in top of package.json.
+
+"homepage": "http://NoobieUs37.githu.io/[reponame]"
+
+add in script of package.json
+
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+create .gitignore file to omit in staging area
+
+in .gitignore - node_modules
+
+git add .
+
+git commit -m "Initial commit"
+
+git remote add origin [quick setup link]
+
+npm run deploy
+
+git push -u origin master

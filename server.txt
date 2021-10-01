@@ -1,0 +1,50 @@
+1. Track your codebase in your git repositary
+
+git init 
+
+git add . // after creating .gitignore
+
+git commit -m "Initial commit"
+
+2. Add a heroku git remote
+
+i) heroku login // it ask for credential
+
+ii) Creating the heroku git remote
+
+heroku create
+
+3) Add a Procfile
+
+inside the Procfile web: node app.js
+
+4) Listening on the correct port
+
+let port = process.env.PORT;
+if (port == null || port == '') {
+    port = 3000;
+}
+app.listen(port);
+
+5) Use a database or object storage instead of writing to your local filesystem
+
+which we finished in our case is mongodb atlas
+
+6) complete language-specific setup
+
+Node.js - to add a version of node
+
+"engines": {
+    "node": "14.0.0" // check it by node --version
+}
+
+add it below license
+
+
+7) deploy an app to heroku
+
+git add .
+
+git commit -m "add gitignore procfile and update ports"
+
+git push heroku master
