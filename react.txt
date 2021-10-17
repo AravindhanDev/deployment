@@ -2,7 +2,7 @@ npm i gh-pages --save-dev  // save it in dev dependency
 
 add in top of package.json.
 
-"homepage": "http://NoobieUs37.githu.io/[reponame]"
+"homepage": "http://NoobieUs37.github.io/[reponame]"
 
 add in script of package.json
 
